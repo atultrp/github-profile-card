@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 import { FaGithub } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 import { MdLocationOn } from "react-icons/md";
 import { RiGlobalLine } from "react-icons/ri";
@@ -85,13 +85,13 @@ const user = () => {
               </div>
               <div className='flex space-x-5 items-center mt-3 justify-center'>
                 <a href={userData?.html_url}>
-                  <FaGithub className='text-gray-500 text-2xl' />
+                  <FaGithub className='text-gray-500 text-2xl hover:text-gray-700' />
                 </a>
                 {userData?.twitter_username && <a href={`twitter.com/${userData?.twitter_username}`}>
-                  <FaTwitter className='text-gray-500 text-2xl' />
+                  <FaSquareXTwitter className='text-gray-500 text-2xl hover:text-gray-700' />
                 </a>}
                 {userData?.blog && <a href={userData?.blog}>
-                  <RiGlobalLine className='text-gray-500 text-2xl' />
+                  <RiGlobalLine className='text-gray-500 text-2xl hover:text-gray-700' />
                 </a>}
               </div>
               <div className="mt-6 mb-3 flex gap-14 md:!gap-14 justify-center">
