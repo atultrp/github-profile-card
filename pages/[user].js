@@ -19,8 +19,6 @@ const user = () => {
       .then(data => setUserData(data));
   }, [user]);
 
-  console.log(userData)
-
   const skeletonCard = () => {
     return (
       <div className="flex flex-col justify-center items-center h-[100vh]">
